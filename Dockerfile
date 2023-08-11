@@ -17,6 +17,6 @@ RUN apk add bash
 RUN wget --no-check-certificate https://sourceforge.net/projects/bbmap/files/BBMap_38.95.tar.gz && \
     tar -xzf BBMap_38.95.tar.gz && \
     rm BBMap_38.95.tar.gz
-
+COPY ./spyne/  /spyne
 ENV PATH="${PATH}:/bbmap"\
     LC_ALL=C
